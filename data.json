@@ -1,0 +1,20 @@
+{
+  "PurchaseOrderRef": "POref",
+
+  "PO": {
+    "deliveryAddress": "deliveryAddress",
+    "supplier": "suppplier",
+    "delDate": "delDate",
+    "description": "description",
+    "jobNum": "jobNum"
+  },
+
+  "jobAddress": "jobAddress",
+
+  "stock": {
+    "stockCode": "stockCode",
+    "stockDesc": "stockDesc",
+    "matGrp": "matGrp",
+    "cost": "cost"
+  }
+}
