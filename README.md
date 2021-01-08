@@ -9,7 +9,7 @@ Run the project in development mode - npm run dev
 
 
 npm install
-npm start/ or run with nodemon
+--RUN WITH NODEMON
 npm run dev
 
 

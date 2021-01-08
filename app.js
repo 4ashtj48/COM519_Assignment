@@ -32,9 +32,12 @@ app.use(
 
 
 //connect to MongoDB
-mongoose.connect(db,
-    { useNewUrlParser: true ,useUnifiedTopology: true}
-  )
+mongoose.connect(db, { userNewUrlParse: true})
+
+
+
+  //   { useNewUrlParser: true ,useUnifiedTopology: true}
+  // )
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 //returns promise
@@ -61,6 +64,8 @@ app.use(function(req, res, next) {
 });
 
 
-//CONSOLE 
-app.listen(PORT, console.log(`Server running on  ${PORT}`));
+
+
+
+
 
