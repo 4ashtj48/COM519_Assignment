@@ -6,3 +6,10 @@ Rename .env.example to .env. You won't normally need to change the values in thi
 If this is your first time getting started then run the seeder - node seeder
 Run the project in development mode - npm run dev
 
+
+
+npm install
+npm start/ or run with nodemon
+npm run dev
+
+
