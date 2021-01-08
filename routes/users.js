@@ -11,4 +11,15 @@ router.get('/login',(req,res) =>res.render('Login'));
 router.get('/register',(req,res) =>res.render('Register'));
 
 
+
+//Register Handle
+//handles the post request
+router.post('/register', (req,res) =>{
+console.log(req.body)
+res.send('hello');
+
+});
+
+
+
 module.exports = router;
