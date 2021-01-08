@@ -16,6 +16,7 @@ router.get('/register',(req,res) =>res.render('Register'));
 router.post('/register', (req,res) =>{
 const {name, email, password, password2} = req.body;
 
+//error array
 let errors = [];
 
 //validation- check fields
@@ -29,6 +30,21 @@ if(password !== password2){
 // 6 character min
 if(password.length < 6){
     errors.push({msg : 'Password should be at least 6 chars'})
+}
+
+if (errors.length >0) {
+    res.render('register',{
+    errors,
+    name,
+    email,
+    password,
+    password2
+//passing back in input
+    });
+}
+else{   
+     res.send('pass');
+
 }
 
 });
